@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cen{
+        text-align: center;
+    }
+
+    body {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	align-self: center;
+	}
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #24b3a7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #454242;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.pos{
+	position:fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgb(0, 255, 179);
+	font-size:larger;
+}
+
+.review{
+        text-align: left;
+        background-color: aqua;
+        border:8px #FFD382 groove
+    }
+    .review td{
+        width: 25%;
+
+    }
+
+    .jiecont{
+        width: 100%;
+        display: flex;
+    }
+
+    .wen{
+        flex :1;
+        text-align: left;
+        margin: 50px;
+    }
+
+    .wen p{
+        size: 60px;
+    }
+    
+    .vid{
+        flex: 1;
+    }
+
+    #paya{
+        size: 100px;
+    }
+</style>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+<body background="material/background.jpg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">班级主页</a>
+        <a href="621Homepage.html">寝室主页</a>
+        <a href="ghy.html">个人主页</a>
+        <a href="合战.html">合战忍者村</a>
+        <a href="航海.html">大航海冒险物语</a>
+        <a href="end.html">结语</a>
+        </div>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="pos">&#9776; 打开</span>
+    <h1 align="center"><img src="material/游1.gif" alt="">&nbsp游戏发展国 &nbsp<img src="material/游2.gif" alt=""></h1>
+    <div class="cen"><img src="material/游top.png" alt="top"></div>
+
+
+    <h2>游戏介绍</h2>
+
+    <div class="jiecont">
+        <div class="wen">
+    <p>经营游戏公司，达成百万人气。
+        <br>
+        找寻优秀职员并对他们进行培养吧。<br>
+        培养公司职员后，可开发的游戏种类和内容会变多。探寻人气组合，在新型主机上进行发售吧！不仅如此，程序员和音乐制作等与游戏相关的职业系统也将登场。
+        <br>
+        争取成为游戏界的霸者吧。</p>
+    </div>
+    <div class="vid">
+        <span id="paya">视频</span>
+        <div class="cen">
+            <video width="500px" height="auto" controls>
+                <source src="material/youxi.webm" type="video/ogg">
+                <source src="material/youxi.webm" type="video/mp4">
+                <source src="material/youxi.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
+</div>
+
+<br>
+
+        <table class="review" border="3px solid #111" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    之前在手机上，玩着玩着就天亮了
+                </td>
+                <td>
+                    刚玩就停不下来 比起小时候玩 现在进展快很多也很有成就感 现在趁着打折补上一直欠开罗的门票 但有一说一我玩开罗的游戏从小到大 最让我印象深刻的还是豪华游轮大纪航 看了一下好像没有上架Steam 希望能早日上架吧 我觉得30左右的价位还是可以接受的毕竟玩的很上瘾 早上醒来挂着吃饭也挂着<br>
+                    废寝忘食了属于是
+                </td>
+                <td>
+                    本作是开罗社的一款经营模拟类游戏。本作的移植比较粗暴，，建议用流式传输玩补个票<br>
+                    在本作中玩家将扮演一个游戏公司的老板来管理自己的游戏公司，并需要设计出独具匠心、蒸蒸日上的好游戏。同时需要统筹规划好公司的发展，招聘各种专业人才，让公司顺调运行，最终得到游戏开发大奖赛的第一名。<br>
+                    本作相比其他开罗社游戏实在是太简单了，，易如反掌。单纯堆叠数值，优先找体力值高的员工。只要游戏数值不那么离谱（比如设计大失败，很快就可以赚到第一桶金，直接滚雪球即可。<br>
+                    本作重复度较高，刚开始几个小时赚满金钱之后就比较无聊了，由于较简单开2周目3周目也比较容易。玩这类游戏就是玩情怀，推荐打折购买。
+                </td>
+                <td style="text-align: center;">
+                    <b>……</b>
+                </td>
+            </tr>
+        </table>
+        <br>
+    <br>
+    <b>官方网站：<a href="https://kairosoft.net/game/appli/gamedev.html"> https://kairosoft.net/game/appli/gamedev.html </a></b>
+</body>
+<footer><img src="material/bg.png" alt="" width="100%" ></footer>
+</html>

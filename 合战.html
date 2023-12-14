@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cen{
+        text-align: center;
+    }
+    body {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	align-self: center;
+	}
+
+    .review{
+        display: flex;
+        text-align: left;
+        background-color: aqua;
+        border:8px #FFD382 groove
+    }
+    .review td{
+        font-family: Microsoft JhengHei;
+        width: 25%;
+    }
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #24b3a7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #454242;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.pos{
+	position:fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgb(0, 255, 179);
+	font-size:larger;
+}
+
+    .jiecont{
+        width: 100%;
+        display: flex;
+    }
+
+    .wen{
+        flex :1;
+        text-align: left;
+        margin: 50px;
+    }
+
+    .wen p{
+        size: 60px;
+    }
+
+    .vid{
+        flex: 1;
+    }
+
+    #paya{
+        size: 100px;
+    }
+</style>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+<body background="material/background.jpg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">班级主页</a>
+        <a href="621Homepage.html">寝室主页</a>
+        <a href="ghy.html">个人主页</a>
+        <a href="游戏.html">游戏发展国</a>
+        <a href="航海.html">大航海冒险物语</a>
+        <a href="end.html">结语</a>
+        </div>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="pos">&#9776; 打开</span>
+    <h1 align="center"><img src="material/合1.gif" alt="" width="100px">合战忍者村  &nbsp;<img src="material/合2.gif" alt="" width="50px"></h1>
+    <div class="cen"><img src="material/合top.png" alt="top"></div>
+    <h2>游戏介绍</h2>
+    <div class="jiecont">
+        <div class="wen">
+            <p>
+                战国时代的忍者战争游戏！！
+                是一款发展忍者村，争取一统天下的模拟类游戏。
+                <br>
+                忍者村的村民（真实身份为忍者）们会向到访的旅客兜售自制的商品以及从村里采集到的木材和矿石来赚钱。赚来的钱可以作为军费，用于村民的修行或是增强装备和兵力。
+                <br>
+                村民通过不断修行可以学会各种各样的技能，让他们装备上武器和铠甲……
+            </p>
+            <br>
+        </div>
+        <div class="vid">
+            <span id="paya">视频</span>
+            <div class="cen">
+                <video width="500px" height="auto" controls>
+                    <source src="material/hezhan.webm" type="video/ogg">
+                    <source src="material/hezhan.webm" type="video/mp4">
+                    <source src="material/hezhan.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <h3>游戏评论(来自steam)</h3>
+    <table class="review" border="3px solid #111" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <span class="fontt">开罗游戏玩了不想停，停了不想玩- -</span>
+            </td>
+            <td>
+                小时候在手机上接触过开罗游戏，直接打开新世界大门。做拉面的，经营球队的，办学校的，冒险村的，大航海的，做连锁店的，做游戏厂商的。。。。。。几乎玩遍了，还记得之前在手机上这个合战忍者村达到真合川的时候卡关了，可能是当时年纪小再加上不能在手机上挂机刷钱。上个月在steam上非常顺畅地就通关了。秘诀就是打不过就挂机刷钱。
+                <br>
+                祝大家天天开心！
+            </td>
+            <td>
+                开罗非常经典的战国题材模拟经营类游戏，玩家需要经营一座忍者村，并培养将领购买士兵，通过在村子中进行贸易活动，来赚取金钱开发将领的装备和招兵买马。所以游戏的玩法还是赚钱，最终的目的是以战斗力的指标转化的。将领其实没有什么随机性，都是固定的，因此玩家的战斗也基本离不开那几个主要的战斗将领，其他的人物大多作为工具人在村子里面工作赚钱罢了。<br>
+                游戏很好玩，战国题材吸引人，玩法多样，游戏的容量大小也是开罗游戏中比较大的，可想而知游戏的内容也是比较庞大的。
+            </td>
+            <td style="text-align: center;">
+                <b>……</b>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b>官方网站：<a href="https://kairosoft.net/game/appli/ninja.html"> https://kairosoft.net/game/appli/ninja.html </a></b>
+</body>
+<footer><img src="material/bg.png" alt="" width="100%" ></footer>
+
+</html>

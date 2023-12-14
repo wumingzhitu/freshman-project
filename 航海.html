@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cen{
+        text-align: center;
+    }
+
+    body {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	align-self: center;
+	}
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #24b332;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #201717;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.pos{
+	position:fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgb(0, 255, 179);
+	font-size:larger;
+}
+
+.review{
+        text-align: left;
+        background-color: aqua;
+        border:8px #FFD382 groove
+    }
+    .review td{
+        width: 25%;
+    }
+
+    .jiecont{
+        width: 100%;
+        display: flex;
+    }
+
+    .wen{
+        flex :1;
+        text-align: left;
+        margin: 50px;
+    }
+
+    .wen p{
+        size: 60px;
+    }
+    
+    .vid{
+        flex: 1;
+    }
+
+    #paya{
+        size: 100px;
+    }
+</style>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+<body background="material/background.jpg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">班级主页</a>
+        <a href="621Homepage.html">寝室主页</a>
+        <a href="ghy.html">个人主页</a>
+        <a href="合战.html">合战忍者村</a>
+        <a href="游戏.html">游戏发展国</a>
+        <a href="end.html">结语</a>
+        </div>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="pos">&#9776; 打开</span>
+
+    <h1 align="center"><img src="material/航1.gif" alt="">&nbsp大海贼冒险岛&nbsp<img src="material/航2.gif" alt=""></h1> 
+
+    <div class="cen"><img src="material/航top.png" alt="top"></div>
+
+    <h2>游戏介绍</h2>
+
+    <div class="jiecont">
+        <div class="wen">
+    <p>这是一个能够让你体验大航海时代冒险生活的模拟游戏，你可以与伙伴一起寻找被埋藏的世界宝藏，也可以热血激昂与海上敌人奋战。<br>
+        梦与浪漫、掌舵在你手中的大航海光景<br>
+        与同伴协力，打倒迷之魔物和凶恶的海贼吧<br>
+        让自己的帆船在这壮阔大海之中自由航行吧！！</p>
+    </div>
+    <div class="vid">
+        <span id="paya">视频</span>
+    <div class="cen">
+         <video width="500px" height="auto" controls>
+                <source src="material/hanghai.webm" type="video/ogg">
+                <source src="material/hanghai.webm" type="video/mp4">
+                <source src="material/hanghai.webm" type="video/webm">
+        </video>
+    </div>
+</div>
+</div>
+
+<br>
+    <table class="review" border="3px solid #111" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                最爱的开罗小游戏~~
+            </td>
+            <td>
+                体量最大的开罗游戏，最好玩也是最肝的一款，没有网络对战，只有npc，无内购奖牌可以用G买体验很好，一周目养几只六角恐龙二周目抓渔夫打资源强化人物不到五转也可以通关困难。小时候没有通关的游戏长大后终于通关了，也算是弥补了小时候的遗憾吧。
+            </td>
+            <td>
+                这一部算是体量最大的开罗游戏了，小时候这游戏是在长辈的手机上下载玩的，打了非常长的一段时间一直没通关过。以前在手机上玩到的时候是联网的，上了steam变成了单机，取消了内购这个设定，并且没有了广告，使游戏更加的人性化。玩法上，玩家扮演的是一个王国海盗，可以选择不同的职业来获得不同的属性提升，招集各种各样的船员，去探索，去发现宝藏，来解锁更多的东西。不同与以往的模拟经营类型，这一做更偏向于回合制，为游戏增加了更多的可玩性。非常值得一玩，并为我的同年补票。
+            </td>
+            <td style="text-align: center;">
+                <b>……</b>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b>官方网站：<a href="https://kairosoft.net/game/appli/pirate.html"> https://kairosoft.net/game/appli/pirate.html </a></b>
+</body>
+<footer><img src="material/bg.png" alt="" width="100%" ></footer>
+</html>

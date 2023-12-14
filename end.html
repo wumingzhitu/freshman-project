@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    html{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        position: relative;
+        left: 80px;
+        display: flex;
+        width: 90%;
+        height: 400px;
+        margin: 10px;
+    }
+
+    .box_s{
+        flex: 1;
+        margin: 10px;
+       
+    }
+
+    .box_b{
+        flex: 2;
+        margin: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #box2{
+        background: url("material/endbg1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #box2 .box_s img{
+        width: 250px;
+    }
+
+    #box3{
+        background: url("material/endbg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #box3 .box_s img{
+        width: 250px;
+        align-self: rignt;
+    }
+
+
+    .box1{
+        width: 100%;
+        height: 300px;
+    }
+
+    .box1 img{
+        width: 100%;
+        height: 300px;
+    }
+
+    h1{
+        position:absolute ;
+        top:80px;
+		left:50px;
+    }
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #24b332;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #201717;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.pos{
+	position:fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgb(0, 255, 179);
+	font-size:larger;
+    z-index:999;
+}
+
+ul img{
+    width: 200px;
+}
+
+ul{
+	display: flex;
+	list-style: none;
+	gap: 20%;
+	text-align: top;
+	
+}
+    
+</style>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+<body background="material/background.jpg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">班级主页</a>
+        <a href="621Homepage.html">寝室主页</a>
+        <a href="ghy.html">个人主页</a>
+        <a href="合战.html">合战忍者村</a>
+        <a href="游戏.html">游戏发展国</a>
+        <a href="航海.html">大航海冒险物语</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="pos">&#9776; 打开</span>
+
+    <div  class="box1" >
+        <img src="material/smallbg.jpg" alt="">
+        <h1>Summary</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container" id="box2">
+        <div class="box_s">
+            <img src="material/end1.gif" alt="">
+        </div>
+        <div class="box_b" >
+            <p>希望大家能够喜欢开罗游戏！！！</p>
+            <p style="color: burlywood;">✧◝(⁰▿⁰)◜✧</p>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container" id="box3">
+        <div class="box_b" style="font-size: 25px; padding: 50px;">
+            <p>开放自由不仅是一种权利，更是一种责任。它要求我们尊重他人的观点，接纳不同的文化，欣赏多元的世界。开放自由让我们有机会追求真理，探索未知，实现自我。它鼓励我们分享知识，传播思想，推动社会进步。🌍</p>
+            <p>开罗游戏来自国外，希望大家以开放包容的心态游玩哦(๑´ㅂ`๑)</p>
+        </div>
+
+        <div class="box_s">
+            <a href="https://zh.wikipedia.org/wiki/%E5%93%86%E5%95%A6A%E5%A4%A2"><img src="material/duola.png" alt=""></a>
+        </div>
+    </div>
+
+    <h4>更多推荐~</h4>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic"><img src="material/My_Little_Pony.png" alt=""></a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Winnie-the-Pooh"><img src="material/winne.jpg" alt=""></a></li>
+    </ul>
+</body>
+<footer><img src="material/bg.png" alt="" width="100%" ></footer>
+</html>

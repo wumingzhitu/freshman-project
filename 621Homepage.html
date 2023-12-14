@@ -9,19 +9,20 @@
 
 
 
-<body>
+<body background="material/621bg.jpg">
 	<div class="carousel">
 		<div class="container">
 			<a href="https://3yya.com/" target="_blank"
-				><img src="background image/16pic_5209510_s.jpg"  /> 
-			/></a>
+			>
+            <img src="material/chenyongqi.jpg" alt="" >
+			</a>
 			<a href="https://3yya.com/courseware" target="_blank"
-				><img src="./assets/进击.jpg"
-			/></a>
+				><img src="material/chenge.jpg" alt="" ></a>
+
 			<a href="https://3yya.com/course/2" target="_blank"
-				><img src="./assets/火影.jpg"
-			/></a>
-			<img src="background image/pexels-juan-agustin-2340254.jpg" />
+				><img src="material/huzhihan.png" alt="" /></a>
+            <a href="https://3yya.com/course/2" target="_blank"
+				><img src="material/personal.jpg" alt=""  /></a>
 		</div>
 		<div class="shift">
 			<div class="btn left" onclick="leftShift()">&lt;</div>
@@ -31,35 +32,30 @@
 	</div>
 
     <table class="introduction">
-        <thead>
+        <tbody >
           <tr>
-            <th>列标题1</th>
-            <th>列标题2</th>
-            <th>列标题3</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>行1，列1</td>
-            <td><img src="" alt=""></td>
-            <td>行1，列3</td>
+            <td style="vertical-align: bottom; color: rgb(233, 233, 51); font-size: 25px;"><b>&#8595;</b>点击该图进入<b>陈戈</b>主页</td>
+            <td><a href="https://chenyq817.github.io/chenyq817/"><img src="material/chenyongqi.jpg" alt="" class="GFG"></a></td>
+            <td style="color: rgb(233, 233, 51); font-size: 25px;"><b>&#8592;</b>点击该图进入<b>陈永琪</b>主页</td>
           </tr>
           <tr>
-            <td>行2，列1</td>
-            <td>行2，列2</td>
-            <td>行2，列3</td>
+            <td><a href="https://abigpigishere.github.io/"><img src="material/chenge.jpg" alt="" class="GFG"></a></td>
+            <td style="color: rgb(233, 233, 51);font-size: 15px;"><a href="" style="color: rgb(229, 238, 58);">点击此处进入班级主页</a></td>
+            <td><img src="material/personal.jpg" alt="" class="GFG"></td>
           </tr>
           <tr>
-            <td>行3，列1</td>
-            <td>行3，列2</td>
-            <td>行3，列3</td>
+            <td style="text-align: right; color: rgb(233, 233, 51); font-size: 25px;">点击该图进入<b>胡智涵</b>主页<b>&#8594;</b></td>
+            <td><a href="https://hzhdyzx.github.io/myweb"><img src="material/huzhihan.png" alt="" class="GFG"></a></td>
+            <td style="vertical-align: top; text-align: right; color: rgb(233, 233, 51); font-size: 25px;"><b>&#8593;</b>点击该图进入<b>葛华银</b>主页</td>
           </tr>
         </tbody>
       </table>
+
+      <a href="">46556</a>
 </body>
 
 <style>
+    
     .carousel {
         width: 600px;
         height: 300px;
@@ -70,6 +66,8 @@
 
         overflow: hidden;
         position: relative;
+
+        left: 300px;
     }
     .carousel .container {
         width: 100%;
@@ -144,6 +142,52 @@
     .carousel:hover .shift .btn {
         opacity: 1;
     }
+
+    .introduction{
+        position: relative;
+        left: 430px;
+    }
+    .introduction tbody img{
+        width: 200px;
+    }
+
+    .GFG {
+            width: 300px;
+            display: inline-block;
+        }
+
+    .GFG:hover {
+            display: inline-block;
+            color: #111;
+            background: rgb(229, 238, 58);
+            box-shadow: 0 0 100px rgb(229, 238, 58);
+            animation: bigger 0.15s linear 0s 1;
+	        animation-fill-mode: forwards;
+        }
+
+    @keyframes bigger {
+
+	0%{
+		transform:  scale(1);
+	}
+	100%{
+		transform:  scale(1.2);
+		
+	}	
+}
+
+    body {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+    line-break:rgb(229, 238, 58);
+    }
+
+
+
 </style>
 
 <script>
